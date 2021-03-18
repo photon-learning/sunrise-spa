@@ -21,7 +21,6 @@
           class="product-description-wrapper panel-collapse collapse"
           :class="{show:expanded[0]}"
         >
-        
           <div class="panel-body">
             <ul class="product-features-list">
               <li v-for="attribute in productAttributes"
@@ -33,8 +32,9 @@
                 <span>
                   {{ attribute.label || attribute.value }}
                 </span>
-                <li style="white-space: pre-wrap;">
-                  {{description}}
+              </li>
+              <li style="white-space: pre-wrap;">
+                {{description}}
               </li>
             </ul>
           </div>
